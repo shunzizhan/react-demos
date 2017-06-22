@@ -7,6 +7,7 @@
   </head>
   <body>
     <div id="example"></div>
+    <div id="example2"></div>
     <script type="text/babel">
       var NotesList = React.createClass({
         render: function() {
@@ -28,6 +29,13 @@
           <span>world</span>
         </NotesList>,
         document.getElementById('example')
+      );
+      ReactDOM.render(
+        <NotesList>
+          <span>111</span>
+          <span>224242</span>
+        </NotesList>,
+        document.getElementById('example2')
       );
     </script>
   </body>

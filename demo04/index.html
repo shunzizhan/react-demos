@@ -10,12 +10,12 @@
     <script type="text/babel">
       var HelloMessage = React.createClass({
         render: function() {
-          return <h1>Hello {this.props.name}</h1>;
+          return <div><h1>Hello {this.props.name}</h1><a href={this.props['data-href']}>gitHub地址</a></div>;
         }
       });
 
       ReactDOM.render(
-        <HelloMessage name="John" />,
+        <HelloMessage name="John" data-href="https://github.com/shunzizhan/react-demos"/>,
         document.getElementById('example')
       );
     </script>
